@@ -1,0 +1,272 @@
+
+/* =========================================================
+   KIAN GOLD — SHARED RESPONSIVE COMPONENTS
+   Tablet and mobile layout rules
+   ========================================================= */
+
+
+/* =========================================================
+   TABLET VIEW — MAX 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Header & Navigation */
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 82px;
+        right: 0;
+        left: 0;
+        background: #171717;
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main-nav.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-main {
+        height: 72px;
+    }
+
+    .header-actions .optional {
+        display: none;
+    }
+
+
+    /* Shared Product Grid */
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* Shared Footer */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Shop */
+
+    .shop-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .filters h3 {
+        grid-column: span 2;
+    }
+
+
+    /* Gold Price Cards */
+
+    .price-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Admin Header */
+
+    .admin-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE VIEW — MAX 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* General Layout */
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+
+    /* Header */
+
+    .header-actions {
+        gap: 9px;
+    }
+
+    .brand {
+        min-width: 0;
+    }
+
+    .brand b {
+        font-size: 13px;
+    }
+
+    .header-actions a {
+        font-size: 11px;
+    }
+
+
+    /* Product Grid */
+
+    .product-grid {
+        gap: 10px;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-info h3 {
+        font-size: 12px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    /* Shared Section Heading */
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    /* Shop Filters */
+
+    .filters {
+        grid-template-columns: 1fr;
+    }
+
+    .filters h3 {
+        grid-column: auto;
+    }
+
+    .toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .toolbar input,
+    .toolbar select {
+        max-width: none;
+    }
+
+
+    /* Shared Page Layouts */
+
+    .cart-layout,
+    .checkout-layout,
+    .about-grid,
+    .contact-layout,
+    .account-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Cart */
+
+    .cart-row {
+        grid-template-columns: 75px 1fr;
+        gap: 12px;
+    }
+
+    .cart-row img {
+        width: 75px;
+        height: 85px;
+    }
+
+    .cart-row .cart-row-actions {
+        grid-column: 2;
+    }
+
+
+    /* Summary */
+
+    .summary-card {
+        position: static;
+    }
+
+
+    /* Forms */
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .span-2 {
+        grid-column: auto;
+    }
+
+
+    /* Gold Price Cards */
+
+    .price-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* About / Values */
+
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Admin */
+
+    .admin-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .admin-header nav {
+        gap: 10px;
+    }
+
+    .admin-header nav a {
+        font-size: 12px;
+    }
+
+
+    /* Floating UI */
+
+    .assistant-launch {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .back-top {
+        bottom: 15px;
+        right: 15px;
+    }
+
+}

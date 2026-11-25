@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rings",
+    "name": "انگشتر"
+  },
+  {
+    "id": "necklaces",
+    "name": "گردنبند"
+  },
+  {
+    "id": "bracelets",
+    "name": "دستبند"
+  },
+  {
+    "id": "earrings",
+    "name": "گوشواره"
+  },
+  {
+    "id": "wedding",
+    "name": "زیورآلات ازدواج"
+  },
+  {
+    "id": "exclusive",
+    "name": "مجموعه‌های ویژه"
+  }
+]

@@ -1,0 +1,18 @@
+
+/* =========================================================
+   KIAN GOLD — LOGIN PAGE
+   ========================================================= */
+
+/*
+  Login page uses shared authentication styles:
+  .auth-wrap
+  .form-card
+  .auth-card
+  .password-wrap
+  .password-toggle
+  .check-line
+  .form-message
+
+  These styles remain in layout.css.
+  No additional page-specific CSS is currently required.
+*/

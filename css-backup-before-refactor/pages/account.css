@@ -1,0 +1,72 @@
+/* استایل اختصاصی این صفحه در صورت توسعه بیشتر در این فایل قرار می‌گیرد. */
+
+
+/* =========================================================
+   KIAN GOLD — ACCOUNT PAGE
+   Page-specific styles
+========================================================= */
+
+
+/* =========================================================
+   ACCOUNT LAYOUT
+========================================================= */
+
+.account-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+
+/* =========================================================
+   ACCOUNT NAVIGATION
+========================================================= */
+
+.account-nav {
+  background: #fff;
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+  height: max-content;
+}
+
+.account-nav a,
+.account-nav button {
+  text-align: right;
+}
+
+
+/* =========================================================
+   ACCOUNT SECTIONS
+========================================================= */
+
+.account-layout > div {
+  display: grid;
+  gap: 20px;
+}
+
+.account-layout .form-card {
+  width: 100%;
+}
+
+.account-layout .form-card h2 {
+  margin-bottom: 20px;
+}
+
+.account-layout .form-message {
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .account-layout {
+    grid-template-columns: 1fr;
+  }
+
+}

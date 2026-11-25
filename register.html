@@ -1,0 +1,148 @@
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ثبت‌نام | کیان گلد</title>
+  <meta
+    name="description"
+    content="ایجاد حساب مشتری — کیان درّالتاج، STAY GOLD"
+  >
+
+  <meta property="og:title" content="ثبت‌نام | کیان گلد">
+  <meta property="og:description" content="ایجاد حساب مشتری">
+  <meta property="og:type" content="website">
+
+  <meta name="theme-color" content="#171717">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="icon" href="assets/images/logo/monogram.svg" type="image/svg+xml">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Register Page CSS -->
+  <link rel="stylesheet" href="css/pages/register.css">
+
+  <script type="module" src="js/app.js"></script>
+</head>
+
+<body data-page="auth">
+
+  <div class="preloader" aria-hidden="true">
+    KIAN <span>GOLD</span>
+  </div>
+
+  <div data-header></div>
+
+  <main>
+
+    <!-- Registration Form -->
+    <section class="auth-wrap">
+
+      <form id="register-form" class="form-card auth-card">
+
+        <span class="eyebrow">عضویت در خانواده کیان</span>
+
+        <h1>ایجاد حساب کاربری</h1>
+
+        <label>
+          نام کامل
+          <input
+            name="name"
+            required
+            minlength="3"
+          >
+        </label>
+
+        <label>
+          ایمیل
+          <input
+            name="email"
+            type="email"
+            required
+          >
+        </label>
+
+        <label>
+          شماره تماس
+          <input
+            name="phone"
+            required
+          >
+        </label>
+
+        <label>
+          رمز عبور
+          <input
+            name="password"
+            type="password"
+            required
+            minlength="8"
+          >
+        </label>
+
+        <label>
+          تکرار رمز عبور
+          <input
+            name="confirm"
+            type="password"
+            required
+            minlength="8"
+          >
+        </label>
+
+        <button class="btn btn-gold full" type="submit">
+          ایجاد حساب
+        </button>
+
+        <p>
+          قبلاً عضو شده‌اید؟
+          <a href="login.html">وارد شوید</a>
+        </p>
+
+        <div class="form-message" aria-live="polite"></div>
+
+        <small>
+          اطلاعات این فرم فقط در مرورگر اعتبارسنجی می‌شود
+          و حساب واقعی ایجاد نمی‌کند.
+        </small>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <div data-footer></div>
+
+  <!-- Shared Components -->
+  <div class="toast-region" aria-live="polite"></div>
+
+  <button class="assistant-launch" aria-label="گفت‌وگو با راهنمای هوشمند">
+    ✧
+  </button>
+
+  <section class="assistant-panel" aria-label="دستیار نمایشی کیان"></section>
+
+  <button class="back-top" aria-label="بازگشت به بالا">
+    ↑
+  </button>
+
+</body>
+</html>

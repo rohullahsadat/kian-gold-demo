@@ -1,0 +1,22 @@
+/* استایل اختصاصی این صفحه در صورت توسعه بیشتر در این فایل قرار می‌گیرد. */
+
+
+/* =========================================================
+   KIAN GOLD — PRODUCT DETAIL PAGE
+   ========================================================= */
+
+/*
+  Product detail content is dynamically rendered
+  inside #product-detail by JavaScript.
+
+  Shared product styles remain in layout.css:
+  .product-grid
+  .product-card
+  .product-image
+  .product-info
+  .product-price
+  .product-actions
+
+  No additional page-specific CSS is added here
+  until the actual rendered product structure is reviewed.
+*/

@@ -1,0 +1,49 @@
+
+/* =========================================================
+   KIAN GOLD — ADMIN PRODUCTS PAGE
+   ========================================================= */
+
+/* Products Toolbar */
+.admin-products-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Admin Product Search */
+#admin-product-search {
+  max-width: 360px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .admin-products-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  #admin-product-search {
+    max-width: none;
+  }
+}
+
+/* =========================================================
+   KIAN GOLD — ADMIN PRODUCTS PAGE
+   ========================================================= */
+
+/*
+  Shared toolbar styles remain in layout.css.
+  Shared table styles remain in layout.css.
+
+  Product-specific elements:
+  #admin-product-search
+  #admin-add-product
+  #admin-products-table
+
+  No additional page-specific CSS is currently required.
+*/

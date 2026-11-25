@@ -1,0 +1,23 @@
+
+/* =========================================================
+   KIAN GOLD — FAQ PAGE
+   ========================================================= */
+
+/* FAQ List */
+.faq-list details {
+  background: #fffefa;
+  border: 1px solid var(--line);
+  padding: 18px 22px;
+  margin-bottom: 12px;
+}
+
+/* FAQ Question */
+.faq-list summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* FAQ Answer */
+.faq-list p {
+  margin: 14px 0 0;
+}

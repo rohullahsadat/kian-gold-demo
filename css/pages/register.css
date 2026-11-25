@@ -1,0 +1,16 @@
+
+/* =========================================================
+   KIAN GOLD — REGISTER PAGE
+   ========================================================= */
+
+/*
+  Registration page uses shared authentication styles:
+  .auth-wrap
+  .form-card
+  .auth-card
+  .form-message
+
+  Shared styles remain in layout.css and global.css.
+
+  No additional page-specific CSS is currently required.
+*/

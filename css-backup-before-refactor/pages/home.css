@@ -1,0 +1,226 @@
+/* استایل اختصاصی این صفحه در صورت توسعه بیشتر در این فایل قرار می‌گیرد. */
+
+
+/* =========================================================
+   KIAN GOLD — HOME PAGE
+   Page-specific styles
+   طراحی فعلی حفظ شده است
+========================================================= */
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  min-height: 570px;
+  position: relative;
+  background:
+    #25211b
+    url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1800')
+    center / cover;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #171717d9, #17171755);
+}
+
+.hero-copy {
+  position: relative;
+  padding-block: 90px;
+}
+
+.hero-copy h1 {
+  max-width: 700px;
+}
+
+.hero-copy h1 em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.hero-copy p {
+  max-width: 520px;
+  color: #eee;
+  margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   GOLD PRICE TICKER
+========================================================= */
+
+.ticker {
+  background: #eee9dc;
+  border-bottom: 1px solid var(--line);
+}
+
+.ticker-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+.ticker-inner strong {
+  color: #8a6815;
+}
+
+.ticker-inner a {
+  margin-inline-start: auto;
+  color: #72550d;
+}
+
+
+/* =========================================================
+   PRODUCT CATEGORIES
+========================================================= */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  background: #e7e0d3;
+  min-height: 260px;
+}
+
+.category-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.category-card:hover img {
+  transform: scale(1.04);
+}
+
+.category-card b,
+.category-card small {
+  display: block;
+  padding-inline: 16px;
+}
+
+.category-card b {
+  padding-top: 12px;
+  font-size: 18px;
+}
+
+.category-card small {
+  padding-bottom: 12px;
+}
+
+
+/* =========================================================
+   EDITORIAL / BRAND STORY
+========================================================= */
+
+.editorial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #e9e3d7;
+}
+
+.editorial-image {
+  min-height: 430px;
+  background:
+    url('https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1200')
+    center / cover;
+}
+
+.editorial-copy {
+  padding: 70px;
+  align-self: center;
+}
+
+
+/* =========================================================
+   TESTIMONIAL
+========================================================= */
+
+.testimonial {
+  text-align: center;
+  max-width: 800px;
+}
+
+.testimonial h2 {
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero-copy {
+    padding: 65px 0;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.6rem;
+  }
+
+  .category-grid {
+    gap: 10px;
+  }
+
+  .category-card {
+    min-height: 200px;
+  }
+
+  .category-card img {
+    height: 190px;
+  }
+
+  .editorial {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-image {
+    min-height: 260px;
+  }
+
+  .editorial-copy {
+    padding: 35px 22px;
+  }
+
+  .ticker-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .ticker-inner a {
+    margin-inline-start: 0;
+  }
+
+}

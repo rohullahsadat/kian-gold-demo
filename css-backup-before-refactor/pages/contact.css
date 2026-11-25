@@ -1,0 +1,33 @@
+
+/* =========================================================
+   KIAN GOLD — CONTACT PAGE
+   ========================================================= */
+
+/* Contact Layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  height: 220px;
+  background: #e9e4d9;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #6d6658;
+  margin-top: 20px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

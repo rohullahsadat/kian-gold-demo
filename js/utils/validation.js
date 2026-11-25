@@ -1,0 +1,1 @@
+export function validForm(form){return form.reportValidity()}export function showMessage(form,msg){const el=form.querySelector('.form-message');if(el)el.textContent=msg}

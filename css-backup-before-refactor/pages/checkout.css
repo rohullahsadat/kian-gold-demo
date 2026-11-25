@@ -1,0 +1,29 @@
+/* استایل اختصاصی این صفحه در صورت توسعه بیشتر در این فایل قرار می‌گیرد. */
+
+
+/* =========================================================
+   KIAN GOLD — CHECKOUT PAGE
+   ========================================================= */
+
+/* Main Checkout Layout */
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Checkout Form */
+.checkout-layout .form-card {
+  width: 100%;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}

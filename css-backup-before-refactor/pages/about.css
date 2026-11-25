@@ -1,0 +1,52 @@
+
+/* =========================================================
+   KIAN GOLD — ABOUT PAGE
+   Page-specific styles
+   Preserve existing design
+========================================================= */
+
+
+/* =========================================================
+   ABOUT INTRODUCTION
+========================================================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-grid img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   BRAND VALUES
+========================================================= */
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE & TABLET
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,656 @@
+
+/* =========================================================
+   KIAN GOLD — SHARED LAYOUT
+   Shared structural components used across multiple pages.
+   ========================================================= */
+
+
+/* =========================================================
+   HEADER & NAVIGATION
+   ========================================================= */
+
+.site-header {
+    background: #171717;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ffffff18;
+}
+
+.header-main {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 180px;
+}
+
+.brand-mark {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    display: grid;
+    place-items: center;
+    font: 700 25px Georgia;
+}
+
+.brand b {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .04em;
+}
+
+.brand small {
+    display: block;
+    color: #bcb5a7;
+    font-size: 10px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-size: 13px;
+}
+
+.main-nav a {
+    color: #eee;
+}
+
+.main-nav a:hover {
+    color: var(--gold);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-actions a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.count {
+    background: var(--gold);
+    color: #171717;
+    border-radius: 50%;
+    padding: 0 6px;
+    font-size: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    border: 0;
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 60px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+.footer h3 {
+    color: var(--gold);
+    font-size: 15px;
+}
+
+.footer p,
+.footer a {
+    color: #c5c0b7;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: grid;
+    gap: 8px;
+}
+
+.newsletter {
+    display: flex;
+    gap: 5px;
+}
+
+.newsletter input {
+    min-width: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff22;
+    margin-top: 40px;
+    padding-top: 18px;
+    color: #999;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SHARED CATEGORY COMPONENTS
+   ========================================================= */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    background: #e7e0d3;
+    min-height: 260px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.category-card:hover img {
+    transform: scale(1.04);
+}
+
+.category-card b,
+.category-card small {
+    display: block;
+    padding-inline: 16px;
+}
+
+.category-card b {
+    padding-top: 12px;
+    font-size: 18px;
+}
+
+.category-card small {
+    padding-bottom: 12px;
+}
+
+
+/* =========================================================
+   SHARED PRODUCT COMPONENTS
+   ========================================================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fffefa;
+    position: relative;
+    border: 1px solid #e9e3d8;
+    min-width: 0;
+}
+
+.product-image {
+    position: relative;
+    display: block;
+    background: #eee9df;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    aspect-ratio: 4 / 4.6;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.035);
+}
+
+.product-info {
+    padding: 14px;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.product-info p {
+    font-size: 12px;
+    margin: 0 0 7px;
+}
+
+.product-price {
+    font-weight: 700;
+    color: #8b6a18;
+}
+
+.product-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.product-actions button {
+    flex: 1;
+    padding: 8px 5px;
+    border: 1px solid var(--line);
+    background: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 0;
+    background: #fff;
+    color: #222;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SHARED AUTHENTICATION COMPONENTS
+   ========================================================= */
+
+.auth-wrap {
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    padding: 55px 20px;
+}
+
+.form-card {
+    background: #fffefa;
+    border: 1px solid var(--line);
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.auth-card {
+    width: min(470px, 100%);
+    display: grid;
+    gap: 10px;
+}
+
+.auth-card h1 {
+    font-size: 2rem;
+}
+
+.auth-card a {
+    color: #8a6815;
+}
+
+.form-message {
+    margin-top: 12px;
+    color: #326e54;
+}
+
+.password-wrap {
+    display: flex;
+}
+
+.password-wrap input {
+    flex: 1;
+}
+
+.password-toggle {
+    border: 1px solid var(--line);
+    background: #eee8da;
+    padding: 0 12px;
+}
+
+.check-line,
+.radio-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-line input,
+.radio-line input {
+    width: auto;
+}
+
+
+/* =========================================================
+   SHARED CHECKOUT SUMMARY COMPONENTS
+   ========================================================= */
+
+.summary-card {
+    background: #fffefa;
+    padding: 25px;
+    border: 1px solid var(--line);
+    position: sticky;
+    top: 105px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.summary-total {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SHARED ADMIN COMPONENTS
+   ========================================================= */
+
+.admin-header {
+    background: #171717;
+    color: white;
+    padding: 18px max(20px, calc((100% - 1180px) / 2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.admin-header nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-header nav a {
+    color: #fff;
+}
+
+.table-wrap {
+    overflow: auto;
+    background: #fff;
+}
+
+.table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.table-wrap th,
+.table-wrap td {
+    padding: 13px;
+    text-align: right;
+    border-bottom: 1px solid var(--line);
+}
+
+.table-wrap th {
+    background: #eee9df;
+}
+
+.admin-page .footer {
+    margin-top: 50px;
+}
+
+
+/* =========================================================
+   SHARED FLOATING COMPONENTS
+   ========================================================= */
+
+.assistant-launch {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 150;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 0;
+    font-size: 27px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.assistant-panel {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    left: 25px;
+    width: min(350px, calc(100vw - 35px));
+    height: 420px;
+    background: #fffefa;
+    z-index: 150;
+    box-shadow: 0 15px 60px #0003;
+    border: 1px solid var(--line);
+    padding: 18px;
+}
+
+.assistant-panel.open {
+    display: block;
+}
+
+.back-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: 0;
+    background: #171717;
+    color: white;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.back-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   SHARED NOTIFICATION COMPONENTS
+   ========================================================= */
+
+.toast-region {
+    position: fixed;
+    top: 95px;
+    left: 20px;
+    z-index: 300;
+}
+
+.toast {
+    background: #171717;
+    color: white;
+    padding: 12px 18px;
+    margin-bottom: 8px;
+    border-right: 3px solid var(--gold);
+}
+
+/* =========================================================
+   KIAN GOLD — IMAGE LOGO
+========================================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .brand-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+}
+
+
+/* =========================================================
+   KIAN GOLD — FOOTER SOCIAL ICONS & RESPONSIVE LAYOUT
+   ========================================================= */
+
+.footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr 1.5fr;
+    align-items: start;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    direction: ltr;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff30;
+    border-radius: 50%;
+    color: #fff !important;
+    background: #ffffff0a;
+    transition: all .3s ease;
+}
+
+.social-link svg {
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
+}
+
+.social-link:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+    background: var(--gold);
+    color: #171717 !important;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-credit {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    direction: ltr;
+    color: #c5c0b7;
+}
+
+.footer-credit span {
+    color: var(--gold);
+    font-size: 12px;
+}
+
+.footer-credit strong {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: .04em;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+    .footer {
+        padding: 45px 0 22px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+
+    .footer-brand,
+    .footer-grid > div:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-socials {
+        gap: 14px;
+    }
+
+    .social-link {
+        width: 42px;
+        height: 42px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand,
+    .footer-grid > div:last-child {
+        grid-column: auto;
+    }
+}

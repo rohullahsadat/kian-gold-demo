@@ -1,0 +1,47 @@
+/* استایل اختصاصی این صفحه در صورت توسعه بیشتر در این فایل قرار می‌گیرد. */
+
+/* =========================================================
+   KIAN GOLD — ADMIN DASHBOARD
+   ========================================================= */
+
+/* Dashboard Statistics */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Statistics Cards */
+.stat-card {
+  background: #fffefa;
+  border: 1px solid var(--line);
+  padding: 22px;
+}
+
+.stat-card b {
+  display: block;
+  font-size: 27px;
+  color: #8a6815;
+}
+
+/* Dashboard Shortcuts */
+.admin-shortcuts {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .admin-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-shortcuts {
+    gap: 10px;
+  }
+}

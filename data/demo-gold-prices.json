@@ -1,0 +1,11 @@
+
+{
+  "currency": "IRR",
+  "currencyLabel": "تومان",
+  "source": "داده نمایشی کیان گلد",
+  "isDemo": true,
+  "lastUpdated": "نرخ نمونه — بدون اتصال به بازار زنده",
+  "gram24": 32000000,
+  "ounce24": 995312000,
+  "changePercent": 0.42
+}

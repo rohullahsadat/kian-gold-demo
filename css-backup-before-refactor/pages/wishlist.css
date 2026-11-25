@@ -1,0 +1,21 @@
+
+/* =========================================================
+   KIAN GOLD — WISHLIST PAGE
+   ========================================================= */
+
+/*
+  Wishlist products use the shared product grid.
+
+  Shared styles remain in layout.css:
+  .product-grid
+  .product-card
+  .product-image
+  .product-info
+  .product-price
+  .product-actions
+
+  Wishlist items are dynamically rendered by JavaScript
+  inside #wishlist-items.
+
+  No additional page-specific CSS is currently required.
+*/

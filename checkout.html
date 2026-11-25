@@ -1,0 +1,156 @@
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>تکمیل سفارش | کیان گلد</title>
+  <meta name="description" content="تکمیل سفارش — کیان درّالتاج، STAY GOLD">
+
+  <meta property="og:title" content="تکمیل سفارش | کیان گلد">
+  <meta property="og:description" content="تکمیل سفارش">
+  <meta property="og:type" content="website">
+
+  <meta name="theme-color" content="#171717">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="icon" href="assets/images/logo/monogram.svg" type="image/svg+xml">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Checkout CSS -->
+  <link rel="stylesheet" href="css/pages/checkout.css">
+
+  <script type="module" src="js/app.js"></script>
+</head>
+
+<body data-page="checkout">
+
+  <div class="preloader" aria-hidden="true">
+    KIAN <span>GOLD</span>
+  </div>
+
+  <div data-header></div>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">گام پایانی</span>
+        <h1>تکمیل سفارش</h1>
+        <p>اطلاعات تماس و نشانی تحویل را وارد کنید.</p>
+      </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="section">
+      <div class="container checkout-layout">
+
+        <!-- Customer Information -->
+        <form id="checkout-form" class="form-card">
+
+          <h2>اطلاعات مشتری</h2>
+
+          <div class="form-grid">
+
+            <label>
+              نام و نام خانوادگی
+              <input name="name" required>
+            </label>
+
+            <label>
+              شماره تماس
+              <input
+                name="phone"
+                required
+                pattern="[0-9+()\- ]{7,20}"
+              >
+            </label>
+
+            <label>
+              ایمیل
+              <input name="email" type="email">
+            </label>
+
+            <label>
+              شهر
+              <input name="city" required>
+            </label>
+
+            <label class="span-2">
+              نشانی کامل
+              <textarea name="address" required rows="3"></textarea>
+            </label>
+
+            <label class="span-2">
+              یادداشت سفارش
+              <textarea name="note" rows="2"></textarea>
+            </label>
+
+          </div>
+
+          <h3>روش پرداخت</h3>
+
+          <label class="radio-line">
+            <input type="radio" name="payment" value="cash" checked>
+            پرداخت هنگام تحویل (نمایشی)
+          </label>
+
+          <label class="radio-line">
+            <input type="radio" name="payment" value="gateway">
+            درگاه پرداخت (در نسخه نمایشی غیرفعال)
+          </label>
+
+          <p class="notice">
+            این نسخه به درگاه بانکی متصل نیست و هیچ پرداخت واقعی انجام نمی‌شود.
+          </p>
+
+          <button class="btn btn-gold" type="submit">
+            ثبت درخواست سفارش
+          </button>
+
+          <div id="checkout-message" aria-live="polite"></div>
+
+        </form>
+
+        <!-- Order Summary -->
+        <aside class="summary-card" id="checkout-summary"></aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div data-footer></div>
+
+  <!-- Shared Components -->
+  <div class="toast-region" aria-live="polite"></div>
+
+  <button class="assistant-launch" aria-label="گفت‌وگو با راهنمای هوشمند">
+    ✧
+  </button>
+
+  <section class="assistant-panel" aria-label="دستیار نمایشی کیان"></section>
+
+  <button class="back-top" aria-label="بازگشت به بالا">
+    ↑
+  </button>
+
+</body>
+</html>

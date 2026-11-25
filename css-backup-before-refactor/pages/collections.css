@@ -1,0 +1,44 @@
+
+/* =========================================================
+   KIAN GOLD — COLLECTIONS PAGE
+   ========================================================= */
+
+/* Collection Feature Layout */
+.collection-feature {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 45px;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+/* Collection Images */
+.collection-feature img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+/* Reverse Collection Layout */
+.collection-feature.reverse img {
+  order: 2;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .collection-feature {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .collection-feature.reverse img {
+    order: 0;
+  }
+
+  .collection-feature img {
+    height: 260px;
+  }
+}

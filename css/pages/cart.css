@@ -1,0 +1,120 @@
+/* استایل اختصاصی این صفحه در صورت توسعه بیشتر در این فایل قرار می‌گیرد. */
+
+
+/* =========================================================
+   KIAN GOLD — CART PAGE
+   Page-specific styles
+========================================================= */
+
+
+/* =========================================================
+   CART LAYOUT
+========================================================= */
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+
+/* =========================================================
+   CART ITEMS
+========================================================= */
+
+#cart-items {
+  min-width: 0;
+}
+
+.cart-row {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+}
+
+.cart-row img {
+  width: 110px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-control button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  background: white;
+}
+
+
+/* =========================================================
+   CART SUMMARY
+========================================================= */
+
+.summary-card {
+  background: #fffefa;
+  padding: 25px;
+  border: 1px solid var(--line);
+  position: sticky;
+  top: 105px;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.summary-total {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET & MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-row {
+    grid-template-columns: 75px 1fr;
+    gap: 12px;
+  }
+
+  .cart-row img {
+    width: 75px;
+    height: 85px;
+  }
+
+  .cart-row .cart-row-actions {
+    grid-column: 2;
+  }
+
+  .summary-card {
+    position: static;
+  }
+
+}
